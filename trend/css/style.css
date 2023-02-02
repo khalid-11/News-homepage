@@ -1,0 +1,330 @@
+html{scroll-behavior: smooth;}
+:root{
+    /* text-colors */
+    --red:#d41626;
+    --navey:#39324e;
+    --dark:#333333;
+    /* transition */
+    --main-transition:.3s;
+}
+.bg-r{
+    background: var(--red);
+}
+.bg-n{
+    background: var(--navey);
+}
+.bg-d{
+    background: var(--dark);
+}
+.c-r{
+    color:var(--red);
+}
+.c-n{
+    color:var(--navey);
+}
+.c-d{
+    color:var(--dark);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* nav */
+nav{
+    backdrop-filter: blur(4px);
+    background-color: #33333338 ;
+}
+.navbar-brand::first-letter{
+    color:var(--red);
+}
+.navbar-toggler{
+    border:none;
+    outline:none;
+    transition:var(--main-transition);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler svg {
+    transition:var(--main-transition);
+    font-size:1.5rem;
+}
+.navbar-toggler:hover svg{
+    color:var(--red);
+}
+/* nav end */
+
+/* landing */
+.landing{
+    position:relative;
+    height:calc(70vh - 56px);
+}
+.landing img{
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.landing .img-overlay{
+    content:"";
+    position:absolute;
+    width:100%;height:100%;
+    top:0;left:0;
+    backdrop-filter: grayscale(100%);
+    z-index: -1;
+    background-color: #00000089;
+    
+}
+/* landing end */
+/* card */
+@media (min-width:1117px) {
+    .landing-cards {
+        margin-top: -70px;
+    }
+}
+.landing-cards .row div hr{
+    width:25%;
+    background-color: #fff;
+    height:3px;
+    border-radius: 1.5px;
+    opacity: 1;
+    border:none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.landing-cards .row>*{
+    position:relative;
+}
+.landing-cards .row>*:nth-child(1) .card{
+    background-color: var(--dark);
+}
+.landing-cards .row>*:nth-child(1)::before{
+    content:"";
+    width:80%;
+    height:80%;
+    top:-10px;
+    left:-10px;
+    position:absolute;
+    background-color: var(--red);
+    opacity: .6;
+}
+.landing-cards .row>*:nth-child(3)::before{
+    content:"";
+    width:80%;
+    height:80%;
+    bottom:-10px;
+    right:-10px;
+    position:absolute;
+    background-color: var(--navey);
+    opacity: .6;
+}
+.landing-cards .row>*:nth-child(2) .card{
+    background-color: var(--red);
+}
+.landing-cards .row>*:nth-child(3) .card{
+    background-color: var(--navey);
+}
+.landing-cards .row>*:nth-child(4) .card{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.special-lines{
+    transform: rotate(50deg) translate(20px, -60px);
+}
+.special-lines hr{
+    width:100% !important;
+    background: #000 !important;
+    margin: 20px !important;
+    height:4px !important;
+    border-radius: 2px !important;
+}
+/* card end */
+
+/* ideas */
+.ideas{
+    margin-top: 50px;
+    padding:50px;
+    background-color: #707ad314;
+    height:400px;
+}
+.ideas hr {
+    height:6px;
+    width:20%;
+    background-color: var(--red);
+    opacity: 1;
+}
+.ideas p {
+    width:80%;
+}
+/* ideas end */
+
+/* vition */
+.vision{
+    position:relative;
+}
+.vision::before{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:50%;
+    background-color: #707ad314;
+    z-index: -1;
+    top:0;
+    left:0;
+}
+.vision::after{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:50%;
+    background-color: var(--navey);
+    z-index: -1;
+    bottom:0;
+    left:0;
+}
+.vision .container .row > div{
+    position: relative;
+}
+.vision .container .row > div:nth-child(3)::before{
+    position:absolute;
+    content:"";
+    width:90%;
+    height:50%;
+    top:-10px;
+    right:-10px;
+    background:var(--red);
+    opacity: .8;
+    z-index: -1;
+
+}
+.vision .container .row > div:nth-child(3){
+    background-image: url(../imgs/white-bulding.jpg) ;
+    background-size:cover;
+
+}
+/* vition end */
+
+
+/* .test-1{
+    border:1px solid red;
+}
+.test-2{
+    border:1px solid rgb(0, 255, 72);
+}
+.test-3{
+    border:1px solid rgb(0, 34, 255);
+} */
+
+
+@media (min-width:1110px) {
+    .features .container .features-container .feature-img{
+        flex-basis:40%;
+    }
+}
+@media (max-width:1109px) {
+    .features .container .features-container .feature-img{
+        flex-basis:95%;
+    }
+}
+
+
+
+/* gallery */
+.gallery-btn{
+    transition:var(--main-transition);
+    display:none;
+    
+}
+.gallery-btn:hover{
+    background-color:var(--red);
+    opacity: .8;
+}
+
+.gallery{
+    position:relative;
+    margin-bottom: 200px;
+}
+@media (min-width: 991px) {
+    .gallery::before{
+    position:absolute;
+    content:"";
+    width:1000px;
+    height:1000px;
+    border-radius: 2.5px;
+    background-color: var(--red);
+    top:-300px;
+    right:0;
+    transform:translateX(0%);
+    z-index: -1;
+}
+}
+
+.gallery::after{
+    position:absolute;
+    content:"";
+    width:5px;
+    border-radius: 2.5px;
+    height:100px;
+    background-color: var(--red);
+    bottom:-130px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.gallery .container .our-gallery .row img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .our-gallery .row > div{
+        width:50%;
+    }
+    .our-gallery .row{
+        flex-direction: row !important;
+    }
+}
+@media (max-width:767px) {
+    .gallery-btn{
+        display: block;
+        cursor: pointer;
+    }
+    .gallery{
+        height:0 !important;
+        overflow: hidden;
+        margin:0 !important;
+        transition:var(--main-transition);
+    }
+    .gallery.show-gallery{
+        height:auto !important;
+        overflow: unset;
+        margin:unset;
+        margin-bottom: 200px;
+    }
+}
+/* gallery end */
+
+
+@media (max-width: 468px){
+    .container{
+        padding: 0 5%;
+    }
+    h1,h2,h3,h4{
+        padding:0 5%;
+        
+    }
+}
+/* tools */
+.tools{
+    padding-top:150px;
+    padding-bottom:150px;
+    background-image: linear-gradient(12deg,var(--red) , var(--red)50% , transparent 50%, transparent  );
+}
+/* tools end */
+/* footer */
+/* footer end */
