@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg  mb-2 mt-2 mb-lg-5 mt-lg-5">
+    <div class="container justify-content-between">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo.svg" alt="">
+      </a>
+      <div class="navbar-toggler-btn active  d-lg-none" id="navbar-toggler-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="links" class="header__links hide-for-mobile">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a class="active"  href="#">Content</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+    </div>
+    <div id="mobile-links" class=" mobile-links active header__links hide-for-desktop">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a class="active"  href="#">Content</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+  </nav>
+  <!-- nav end -->
+  <!-- grid -->
+  <section class="container">
+    <div class="row d-flex align-items-stretch">
+      <div class="col-12 col-lg-8 ">
+        <div class="row mb-2 mb-lg-4">
+          <div class="col ">
+            <img class="w-100 d-none d-md-block" src="./assets/images/image-web-3-desktop.jpg" alt="">
+            <img class="w-100 d-md-none" src="./assets/images/image-web-3-mobile.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class=" col-12 col-md-6">
+            <h1 class="mt-0 fs-55 fw-bold">The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="mt-0 mb-5">  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <div class="btn rounded-0 bg-danger text-light px-5 py-3 text-uppercase">Read more</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 mt-5 mt-lg-0 ">
+        <div class="content bg-navy text-light p-4">
+          <h2 class="mb-4 text-yellow">New</h2>
+          <div class="text-box ">
+            <p class="fs-4 fw-bold">Hydrogen VS Electric Cars</p>
+            <p class="text-white-50">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr>
+          <div class="text-box ">
+            <p class="fs-4 fw-bold">The Downsides of AI Artistry</p>
+            <p class="text-white-50">What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <hr>
+          <div class="text-box ">
+            <p class="fs-4 fw-bold">Is VC Funding Drying Up?</p>
+            <p class="text-white-50">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-section row mt-5 d-flex  align-items-stretch">
+      <div class="col-12 col-lg-4 d-flex mb-4">
+        <img class="me-3" src="assets/images/image-retro-pcs.jpg" alt="">
+        <div class="text">
+          <h2 class="fw-bold text-black-50 ">01</h2>
+          <h2 class="fs-5">Reviving Retro PCs</h2>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 d-flex mb-4">
+        <img class="me-3" src="assets/images/image-top-laptops.jpg" alt="">
+        <div class="text">
+          <h2 class="fw-bold text-black-50">01</h2>
+          <h2 class="fs-5">Reviving Retro PCs</h2>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 d-flex mb-4">
+        <img class="me-3" src="assets/images/image-gaming-growth.jpg" alt="">
+        <div class="text">
+          <h2 class="fw-bold text-black-50">01</h2>
+          <h2 class="fs-5">Reviving Retro PCs</h2>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- bootstrap js bundle -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <!-- main.js -->
+  <script src="js/main.js"></script>
+</body>
+</html>

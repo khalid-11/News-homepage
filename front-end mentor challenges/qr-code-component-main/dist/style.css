@@ -1,0 +1,53 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D5E1EF;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 18px;
+  max-width: 320px;
+  text-align: center;
+}
+
+.code {
+  border-radius: 13px;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 13px;
+}
+
+.title h2 {
+  font-size: 24px;
+  color: #1F2E45;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.descereption p {
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #86898E;
+}/*# sourceMappingURL=style.css.map */

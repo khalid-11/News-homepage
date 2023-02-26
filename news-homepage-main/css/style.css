@@ -1,0 +1,135 @@
+:root{
+  --grey-clr:#666465;
+  --yellow-clr:#EAAA52;
+  --navy-clr:#00001A;
+}
+.text-yellow{
+  color: var(--yellow-clr);
+}
+.bg-navy{
+  background-color:var(--navy-clr);
+}
+/* globals */
+
+html{
+  box-sizing: border-box;
+}
+
+* , *::before ,*::after{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+@media (min-width:1200px){
+  .container{
+    max-width:1110px !important;
+  }
+}
+
+#links a{
+  text-decoration:none;
+  transition: color .3s ease-in-out;
+  padding: 1rem 1.5rem ;
+  color: #5C5B61;
+}
+#links a:hover{
+  color: var(--yellow-clr);
+}
+.btn {
+  letter-spacing: 3px;
+}
+
+/* nav */
+.nav-item{
+  cursor: pointer;
+}
+.nav-item:hover > a {
+  color: var(--yellow-clr) !important;
+}
+.navbar-nav .nav-item .link{
+  margin-left:2.25rem ;
+  color: var(--grey-clr);
+}
+
+/* for ==> The Bright Future of Web 3.0? */
+.fs-55{
+  font-size: 55px;
+}
+
+/* last section with 3 columns */
+.bottom-section img{
+  width:100px;
+  object-fit: cover;
+}
+
+
+.navbar-toggler-btn{
+  padding:10px;
+  cursor: pointer;
+}
+.navbar-toggler-btn span{
+  margin-bottom: 5px;
+  display:block;
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #00001A;
+  transition: all .3s ease-in-out;
+}
+.navbar-toggler-btn.active{
+  z-index: 1;
+  position: fixed;
+  right:0;
+}
+.navbar-toggler-btn.active span:nth-child(1){
+  transform: rotate(45deg) translate(-2px , 0px);
+  transform-origin: left;
+}
+.navbar-toggler-btn.active span:nth-child(2){
+  opacity: 0;
+}
+.navbar-toggler-btn.active span:nth-child(3){
+  transform: rotate(-45deg) translate(-2px , 0px);
+  transform-origin: left;
+}
+
+
+@media (max-width: 989px){
+  .mobile-links{
+    position:fixed;
+    height:100vh;
+    width:66.66%;
+    background-color: white;
+    top:0;
+    right:-100%;
+    display:flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items:flex-start;
+    transition: all .3s ease-in-out;
+  }
+  .mobile-links.active{
+    right:0;
+  } 
+  #mobile-links a{
+    display:block;
+    text-decoration:none;
+    font-size: 1.1rem;
+    color:var(--grey-clr);
+    padding:1rem 0 1rem 2rem;
+    color: #5C5B61;
+  }
+  .hide-for-mobile{
+    display:none;
+  }
+}
+@media (min-width: 990px){
+  #links{
+    position:relative;
+  }
+  .hide-for-desktop{
+    display:none;
+  }
+}
